@@ -24,7 +24,7 @@ dag = DAG('process-songs-metrics',
 
 def check_files_in_s3(prefix):
     s3 = boto3.client('s3')
-    bucket_name = 'nl-aws-de-labs'
+    bucket_name = 'exnl-aws-de-labs'
     
     response = s3.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
     contents = response.get('Contents', [])
