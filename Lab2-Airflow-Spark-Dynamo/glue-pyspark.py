@@ -7,7 +7,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Define S3 bucket and file paths
-bucket_name = 'nl-aws-de-labs'
+bucket_name = 'exnl-aws-de-labs'
 songs_file_path = f's3a://{bucket_name}/spotify_data/songs/'
 users_file_path = f's3a://{bucket_name}/spotify_data/users/'
 user_streams_path = f's3a://{bucket_name}/spotify_data/user-streams/'
